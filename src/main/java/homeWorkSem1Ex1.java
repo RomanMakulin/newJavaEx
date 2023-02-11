@@ -3,12 +3,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class homeWorkSem1Ex1 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("Введите число : ");
-        int num = Integer.parseInt(reader.readLine());
-        reader.close();
-        System.out.println("Треугольное число = " + Triangle(num) + "\n");
+    public static void main(String[] args){
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            System.out.print("Введите число : ");
+            int num = Integer.parseInt(reader.readLine());
+            reader.close();
+            System.out.println("Треугольное число = " + Triangle(num) + "\n");
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
     public static int Triangle(int num) {
