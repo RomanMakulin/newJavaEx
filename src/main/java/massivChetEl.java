@@ -1,5 +1,7 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.io.*;
 import java.util.Random;
 
 // дан массив чисел, нужно сформировать новую выборку
